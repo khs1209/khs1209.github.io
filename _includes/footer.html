@@ -1,14 +1,9 @@
-<footer>
-  <div class="footer-wrap">
-    <div class="footer-tagline">
-      <p>{{ site.data.settings.footer }}</p>
-    </div>
-    <div class="social-media">
-      <nav>
-        {% for item in site.data.settings.social %}
-          <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-        {% endfor %}
-      </nav>
-    </div>
-  </div>
-</footer>
+<section id="footer">
+  <ul class="icons">
+  	<li><a href="https://twitter.com/{{ site.twitter_username }}" class="fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="https://github.com/{{ site.github_username }}" class="fa-github"><span class="label">GitHub</span></a></li>
+		<li><a href="/feed.xml" class="fa-rss"><span class="label">RSS</span></a></li>
+		<li><a href="mailto:{{ site.email }}" class="fa-envelope"><span class="label">Email</span></a></li>
+	</ul>
+  <p class="copyright">Copyright &copy; 2015 {{ site.author }}</p>
+</section>
